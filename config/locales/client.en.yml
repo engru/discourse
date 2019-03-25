@@ -363,8 +363,8 @@ en:
       none: "There are no items to review."
       view_pending: "view pending"
       topic_has_pending:
-        one: "This topic has <b>1</b> post awaiting approval"
-        other: "This topic has <b>{{count}}</b> posts awaiting approval"
+        one: "This topic has <b>1</b> post pending approval"
+        other: "This topic has <b>{{count}}</b> posts pending approval"
       title: "Needs Review"
       topic: "Topic:"
       filtered_topic: "You have filtered to reviewable content in a single topic."

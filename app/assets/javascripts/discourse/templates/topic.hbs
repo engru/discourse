@@ -211,6 +211,18 @@
           {{#conditional-loading-spinner condition=model.postStream.loadingFilter}}
             {{#if loadedAllPosts}}
 
+              {{#if model.pending_posts_count}}
+                <div class="has-pending-posts">
+                  <div>
+                    {{{i18n "review.topic_has_pending" count=model.pending_posts_count}}}
+                  </div>
+
+                  {{#link-to 'review' (query-params topic_id=model.id type="ReviewableQueuedPost" status="pending")}}
+                    {{i18n "review.view_pending"}}
+                  {{/link-to}}
+                </div>
+              {{/if}}
+
               {{#if model.private_topic_timer.execute_at}}
                 {{topic-timer-info
                     topicClosed=model.closed
