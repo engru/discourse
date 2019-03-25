@@ -3,10 +3,11 @@ import RestModel from "discourse/models/rest";
 import computed from "ember-addons/ember-computed-decorators";
 import Category from "discourse/models/category";
 
-const PENDING = 0;
-const APPROVED = 1;
-const REJECTED = 2;
-const IGNORED = 3;
+export const PENDING = 0;
+export const APPROVED = 1;
+export const REJECTED = 2;
+export const IGNORED = 3;
+export const DELETED = 4;
 
 export default RestModel.extend({
   pending: Ember.computed.equal("status", PENDING),

@@ -244,7 +244,8 @@ class Reviewable < ActiveRecord::Base
         { created_by: :user_stat },
         :topic,
         :target,
-        :target_created_by
+        :target_created_by,
+        :reviewable_histories
       ).includes(reviewable_scores: { user: :user_stat, meta_topic: :posts })
     end
     return result if user.admin?

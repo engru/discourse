@@ -20,6 +20,10 @@
   }
 }
 
+.no-review {
+  margin-top: 1em;
+}
+
 .reviewable-filters {
   background-color: $primary-very-low;
   padding: 0.5em 1em 1em 1em;
@@ -154,7 +158,12 @@
   padding-bottom: 1em;
 }
 
-.reviewable-scores {
+.reviewable-histories {
+  margin-top: 1em;
+}
+
+.reviewable-scores,
+.reviewable-histories {
   min-width: 50%;
 
   .user {

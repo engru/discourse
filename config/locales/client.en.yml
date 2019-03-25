@@ -360,7 +360,7 @@ en:
       moderation_history: "Moderation History"
       view_all: "view all"
       grouped_by_topic: "grouped by topic"
-      none: "There is nothing to review right now."
+      none: "There are no items to review."
       view_pending: "view pending"
       topic_has_pending:
         one: "This topic has <b>1</b> post awaiting approval"
@@ -396,9 +396,13 @@ en:
         category: "Category:"
       conversation:
         view_full: "view full conversation"
+      history:
+        title: "History"
+        edited: "Edited"
       scores:
         description: "Description"
         score: "Score"
+        submitted_by: "Submitted By"
       statuses:
         pending:
           title: "Pending"
@@ -408,6 +412,8 @@ en:
           title: "Rejected"
         ignored:
           title: "Ignored"
+        deleted:
+          title: "Deleted"
         reviewed:
           title: "(All Reviewed)"
         all:
