@@ -614,12 +614,9 @@
     </div>
     <div class="controls">
       {{#if model.flags_received_count}}
-        {{d-button
-          class="btn-default"
-          action=(action "showFlagsReceived")
-          label="admin.user.show_flags_received"
-          icon="flag"
-        }}
+        {{#link-to 'review' (query-params username=model.username type="ReviewableFlaggedPost" status="all") class="btn"}}
+          {{i18n "admin.user.show_flags_received"}}
+        {{/link-to}}
       {{/if}}
     </div>
   </div>

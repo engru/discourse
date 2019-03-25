@@ -26,10 +26,6 @@ export default Ember.Service.extend({
     });
   },
 
-  showFlagsReceived(user) {
-    showModal(`admin-flags-received`, { admin: true, model: user });
-  },
-
   checkSpammer(userId) {
     return AdminUser.find(userId).then(au => this.spammerDetails(au));
   },

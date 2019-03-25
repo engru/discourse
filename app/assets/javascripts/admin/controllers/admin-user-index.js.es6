@@ -214,9 +214,6 @@ export default Ember.Controller.extend(CanCheckEmails, {
         target_user: this.get("model.username")
       });
     },
-    showFlagsReceived() {
-      this.get("adminTools").showFlagsReceived(this.get("model"));
-    },
     showSuspendModal() {
       this.get("adminTools").showSuspendModal(this.get("model"));
     },
