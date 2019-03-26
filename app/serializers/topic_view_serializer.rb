@@ -298,7 +298,7 @@ class TopicViewSerializer < ApplicationSerializer
   end
 
   def pending_posts_count
-    ReviewableQueuedPost.viewable_by(scope.user).pending.count
+    ReviewableQueuedPost.viewable_by(scope.user).where(topic_id: object.topic.id).pending.count
   end
 
   def include_pending_posts_count?
